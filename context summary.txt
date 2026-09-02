@@ -1,0 +1,1312 @@
+CHARISMA TRANSPORT — MASTER PROJECT CONTEXT
+============================================
+
+PROJECT:
+--------
+Build a professional, attractive, modern, responsive travel/tourist bus rental website for a company named "Charisma Transport".
+
+The application must be built using:
+- React
+- TypeScript / TSX
+- Vite
+- Modern responsive CSS or Tailwind CSS
+- GitHub for source control
+- GitHub Pages for hosting
+- Custom domain: charismatransport.com
+
+The initial application must be static/serverless and should NOT require a paid database, VPS, backend server, or paid file storage.
+
+The website should be designed so that future backend/database functionality can be added without rewriting the entire application.
+
+
+==================================================
+1. BUSINESS INFORMATION
+==================================================
+
+Business Name:
+Charisma Transport
+
+Business Type:
+Travel Company / Tourist Bus Rental
+
+Location:
+Kanyakumari District, Tamil Nadu, India
+
+Service Area:
+Travel throughout India
+
+Owner:
+Sam Ebison
+
+Email:
+samelfin.256@gmail.com
+
+WhatsApp:
+84898 92221
+
+Additional Contact Number:
+9843029466
+
+Owner / Office Address:
+24-21 Beula Cottage
+Kanjankadu
+Manalikarai Post
+Nagercoil
+Tamil Nadu - 629164
+India
+
+
+==================================================
+2. BUSINESS DESCRIPTION
+==================================================
+
+Use the following information as the basis for the website content:
+
+"Travel Company providing student package trips, devotional trips and marriage trips with 16, 21, 34, 37, 38, 46 & 51 pushback seater AC/NON AC tourist buses for rent."
+
+Charisma Transport provides:
+- Student package trips
+- Devotional trips
+- Marriage trips
+- Tourist trips
+- Group trips
+- Outstation travel
+- All-India travel
+- Tourist bus rental
+
+
+==================================================
+3. REAL BUS FLEET
+==================================================
+
+IMPORTANT:
+These are the REAL seating capacities currently available.
+
+Only use these seating capacities:
+
+- 16 seater
+- 21 seater
+- 34 seater
+- 37 seater
+- 38 seater
+- 46 seater
+- 51 seater
+
+DO NOT add 32 seater.
+DO NOT invent any other seating capacity.
+
+General confirmed bus characteristics:
+- Push-back seats
+- AC / Non-AC options
+- Tourist bus configuration
+
+Do not invent bus models or specifications.
+
+Do not claim additional features unless they are confirmed by the business.
+
+
+==================================================
+4. GPS TRACKING — FUTURE FEATURE
+==================================================
+
+GPS tracking is NOT currently available.
+
+Do NOT display GPS tracking as an existing bus feature.
+
+However, structure the code so GPS tracking can easily be added in the future.
+
+Example future state:
+
+GPS Tracking:
+CURRENTLY: Not Available
+FUTURE: Can be added later
+
+Do not put "GPS Tracking" inside the current bus features list.
+
+
+==================================================
+5. OTHER BUS FEATURES
+==================================================
+
+Confirmed/current features:
+- Push-back seats
+- AC / Non-AC options
+- Tourist bus configuration
+
+Potential features such as the following are NOT confirmed and must NOT be displayed as available unless the owner later confirms them:
+
+- GPS tracking
+- Wi-Fi
+- USB charging
+- Dolby Atmos
+- TV
+- Entertainment system
+- Individual charging
+- Refrigerator
+- CCTV
+- Air suspension
+- Reading lights
+- Luggage specifications
+- Emergency systems
+- Other technical specifications
+
+Never invent specifications.
+
+If a future specification is confirmed, it can be added to the data model without redesigning the application.
+
+
+==================================================
+6. FREQUENT DESTINATIONS
+==================================================
+
+Charisma Transport travels throughout India.
+
+Frequently travelled destinations include:
+
+- Ooty
+- Kodaikanal
+- Chennai
+- Pondicherry
+- Mysore
+
+The website should communicate that the company provides travel throughout India.
+
+The destination system should be data-driven so more destinations can easily be added later.
+
+Do not claim that the company operates only in these destinations.
+
+
+==================================================
+7. SERVICES
+==================================================
+
+Create a professional Services section.
+
+Main services:
+
+1. Student Package Trips
+   - School trips
+   - College trips
+   - Educational tours
+   - Student group travel
+
+2. Devotional Trips
+   - Temple visits
+   - Pilgrimage trips
+   - Religious group travel
+   - Family devotional trips
+
+3. Marriage Trips
+   - Wedding transportation
+   - Family transportation
+   - Guest transportation
+   - Marriage-related group travel
+
+4. Tourist / Group Trips
+   - Family tours
+   - Friends/group tours
+   - Outstation trips
+   - Tourist travel
+   - All-India travel
+
+
+==================================================
+8. WEBSITE GOALS
+==================================================
+
+The website should:
+
+- Look premium
+- Look modern
+- Look trustworthy
+- Be visually attractive
+- Be mobile-first
+- Be fast
+- Be easy to navigate
+- Make WhatsApp contact very easy
+- Showcase the real bus fleet
+- Showcase real photos and videos
+- Showcase destinations
+- Explain services clearly
+- Display office/owner information
+- Provide social media links
+- Provide Google Maps location
+- Be SEO friendly
+- Be easy to maintain
+- Be easy to update later
+
+The website should look like a professional travel brand, NOT like an old-fashioned basic business website.
+
+
+==================================================
+9. WEBSITE STRUCTURE
+==================================================
+
+Recommended main navigation:
+
+- Home
+- About
+- Services
+- Our Fleet
+- Destinations
+- Gallery
+- Contact
+
+The application can use multiple pages or a polished single-page layout with sections. Choose the architecture that provides the best user experience and clean code.
+
+Recommended sections/pages:
+
+HOME
+- Navbar
+- Hero
+- Company introduction
+- Main CTA
+- WhatsApp CTA
+- Key services
+- Fleet preview
+- Popular destinations
+- Gallery/video preview
+- Why Choose Charisma
+- Testimonials section if real testimonials are available
+- Contact CTA
+- Footer
+
+ABOUT
+- Company introduction
+- Owner: Sam Ebison
+- Kanyakumari District location
+- Travel throughout India
+- Company services
+- Commitment to customers
+
+SERVICES
+- Student trips
+- Devotional trips
+- Marriage trips
+- Tourist/group trips
+
+FLEET
+- 16 seater
+- 21 seater
+- 34 seater
+- 37 seater
+- 38 seater
+- 46 seater
+- 51 seater
+
+DESTINATIONS
+- Ooty
+- Kodaikanal
+- Chennai
+- Pondicherry
+- Mysore
+- expandable for future destinations
+
+GALLERY
+- Bus images
+- Bus interiors
+- Trips
+- Destinations
+- Events
+- Office
+- Other real photos
+
+VIDEOS / SHORTS
+- Short travel videos
+- Bus videos
+- Trip videos
+- Destination videos
+
+CONTACT
+- Address
+- Phone
+- Email
+- WhatsApp
+- Google Maps
+- Social media
+
+
+==================================================
+10. HERO SECTION
+==================================================
+
+The Hero section should be visually strong.
+
+Use a real Charisma Transport bus image or video when available.
+
+Possible content:
+
+CHARISMA TRANSPORT
+
+"Your Journey. Our Charisma."
+
+Supporting text:
+"Student Trips • Devotional Trips • Marriage Trips • Tourist & Group Travel"
+
+Primary CTA:
+"Plan Your Trip"
+
+Secondary CTA:
+"WhatsApp Us"
+
+The exact tagline can be changed later.
+
+Do not use generic claims such as "No.1 Travel Company" unless confirmed.
+
+
+==================================================
+11. DESIGN SYSTEM
+==================================================
+
+Recommended visual direction:
+
+Premium
+Modern
+Clean
+Elegant
+Professional
+Travel-focused
+
+Suggested colors:
+
+Primary:
+Deep Navy
+#071A2B
+
+Secondary:
+Gold
+#D4A72C
+
+Accent:
+Teal
+#00A6A6
+
+Background:
+#F7F8FA
+
+These colors can be adjusted later based on the actual company logo and bus colors.
+
+Use:
+- Large high-quality imagery
+- Rounded cards
+- Clean typography
+- Good spacing
+- Subtle animations
+- Smooth hover effects
+- Modern icons
+- Good contrast
+- Accessible buttons
+- Responsive layouts
+
+Avoid:
+- Excessive gradients
+- Too many colors
+- Excessive animations
+- Cluttered layouts
+- Very large text that hurts mobile UX
+- Old-fashioned website styling
+
+
+==================================================
+12. IMAGES
+==================================================
+
+The developer/user will manually place images inside the project.
+
+Use this structure:
+
+public/
+  images/
+    buses/
+    destinations/
+    gallery/
+    office/
+    owner/
+
+Use actual Charisma Transport photos whenever possible.
+
+Recommended image formats:
+- WebP
+- JPG
+- PNG
+
+Prefer WebP for performance.
+
+Use descriptive filenames such as:
+
+charisma-16-seater.webp
+charisma-21-seater.webp
+charisma-34-seater.webp
+charisma-37-seater.webp
+charisma-38-seater.webp
+charisma-46-seater.webp
+charisma-51-seater.webp
+
+Do not assume that every image exists.
+
+The application should gracefully handle missing images or allow the developer to configure image paths easily.
+
+Use lazy loading for gallery images where appropriate.
+
+
+==================================================
+13. VIDEOS / SHORTS
+==================================================
+
+The developer/user will manually place videos inside:
+
+public/
+  videos/
+
+Videos may include:
+- Bus exterior
+- Bus interior
+- Travel journeys
+- Destinations
+- Trips
+- Events
+- Boarding
+- Tourist locations
+
+Create a visually attractive "Experience Charisma" or similar video section.
+
+Support vertical/short videos where possible.
+
+Do not load huge videos unnecessarily on initial page load.
+
+Use poster images/thumbnails where appropriate.
+
+The application should remain performant on mobile networks.
+
+Do not put huge raw 4K videos into the Git repository unless necessary.
+
+YouTube/Instagram can be used later for externally hosted videos.
+
+
+==================================================
+14. FLEET DATA
+==================================================
+
+The fleet should be data-driven.
+
+Example:
+
+export const buses = [
+  {
+    seatingCapacity: 16,
+    type: "AC / Non-AC",
+    features: ["Push Back Seats"],
+    image: "/images/buses/16-seater.webp"
+  },
+  {
+    seatingCapacity: 21,
+    type: "AC / Non-AC",
+    features: ["Push Back Seats"],
+    image: "/images/buses/21-seater.webp"
+  },
+  {
+    seatingCapacity: 34,
+    type: "AC / Non-AC",
+    features: ["Push Back Seats"],
+    image: "/images/buses/34-seater.webp"
+  },
+  {
+    seatingCapacity: 37,
+    type: "AC / Non-AC",
+    features: ["Push Back Seats"],
+    image: "/images/buses/37-seater.webp"
+  },
+  {
+    seatingCapacity: 38,
+    type: "AC / Non-AC",
+    features: ["Push Back Seats"],
+    image: "/images/buses/38-seater.webp"
+  },
+  {
+    seatingCapacity: 46,
+    type: "AC / Non-AC",
+    features: ["Push Back Seats"],
+    image: "/images/buses/46-seater.webp"
+  },
+  {
+    seatingCapacity: 51,
+    type: "AC / Non-AC",
+    features: ["Push Back Seats"],
+    image: "/images/buses/51-seater.webp"
+  }
+];
+
+Do not add GPS Tracking to these features.
+
+Do not add unconfirmed features.
+
+
+==================================================
+15. CONTACT INFORMATION
+==================================================
+
+Keep contact information centralized in one configuration/data file.
+
+Recommended:
+
+src/
+  config/
+    contact.ts
+
+Suggested structure:
+
+export const contactInfo = {
+  companyName: "Charisma Transport",
+  owner: "Sam Ebison",
+  email: "samelfin.256@gmail.com",
+  whatsapp: "84898 92221",
+  phone: "9843029466",
+  address: "24-21 Beula Cottage, Kanjankadu, Manalikarai Post, Nagercoil, Tamil Nadu - 629164, India"
+};
+
+
+==================================================
+16. WHATSAPP
+==================================================
+
+Use:
+
+84898 92221
+
+specifically for WhatsApp.
+
+Create:
+- WhatsApp button in Hero
+- WhatsApp CTA in Contact
+- Floating WhatsApp button, especially on mobile
+
+The WhatsApp link should open a chat with Charisma Transport.
+
+Where appropriate, create a pre-filled enquiry message.
+
+Example:
+
+Hello Charisma Transport,
+
+I would like to enquire about a trip.
+
+Name:
+From:
+Destination:
+Travel Date:
+Return Date:
+Passengers:
+Trip Type:
+
+Please share availability and pricing.
+
+Do not hardcode personal/private data beyond the provided business contact information.
+
+
+==================================================
+17. ENQUIRY FORM
+==================================================
+
+No paid database is required initially.
+
+Recommended fields:
+
+- Name
+- Phone Number
+- Starting Location
+- Destination
+- Travel Date
+- Return Date
+- Number of Passengers
+- Bus Preference
+- Trip Type
+- Message
+
+Trip types:
+- Student Trip
+- Devotional Trip
+- Marriage Trip
+- Tourist Trip
+- Other
+
+Initial implementation options:
+1. Convert the form into a WhatsApp enquiry
+2. Use a free form service
+3. Use Google Forms/Google Sheets if required
+
+Do NOT build a custom backend/database for V1.
+
+The form should have:
+- Client-side validation
+- Required field handling
+- Friendly error messages
+- Success feedback
+- Mobile-friendly layout
+
+
+==================================================
+18. SOCIAL MEDIA
+==================================================
+
+INSTAGRAM:
+
+https://www.instagram.com/charisma_transport_official?utm_source=qr&igsi=aGNpc2MwcnppZ3Z5
+
+The Instagram icon must be clickable and redirect to the provided Instagram page.
+
+
+FACEBOOK:
+
+https://www.facebook.com/p/Charisma-CABS-100063614634252/
+
+The Facebook icon must be clickable and redirect to the provided Facebook page.
+
+
+YOUTUBE:
+
+YouTube icon must be displayed.
+
+IMPORTANT:
+There is currently NO YouTube URL.
+
+Therefore:
+- Show the YouTube icon
+- Do NOT make it redirect anywhere
+- Do NOT invent a YouTube URL
+- Make it easy to add the URL later
+
+Example configuration:
+
+youtube: null
+
+
+==================================================
+19. GOOGLE MAPS / LOCATION
+==================================================
+
+Use this exact Google Maps link:
+
+https://maps.app.goo.gl/NSrZJntWZTVYgGig6
+
+Create a Contact / Office section containing:
+
+"Visit Our Office"
+
+Address:
+24-21 Beula Cottage
+Kanjankadu
+Manalikarai Post
+Nagercoil
+Tamil Nadu - 629164
+India
+
+Provide a:
+"Get Directions"
+
+button/link using the provided Google Maps URL.
+
+Do not invent coordinates.
+
+
+==================================================
+20. OWNER
+==================================================
+
+Owner:
+
+Sam Ebison
+
+Display the owner information in the About/Company section where appropriate.
+
+Do not invent:
+- Owner biography
+- Years of experience
+- Awards
+- Personal history
+- Company history
+
+unless provided later.
+
+
+==================================================
+21. TESTIMONIALS
+==================================================
+
+A testimonials section may be included in the design.
+
+IMPORTANT:
+Do NOT create fake customer reviews.
+
+If real testimonials are not available:
+- Hide the section
+OR
+- Build the component but do not publish fake content.
+
+Real reviews can be added later.
+
+
+==================================================
+22. WHY CHOOSE CHARISMA
+==================================================
+
+Possible factual points:
+
+- Multiple seating options
+- AC and Non-AC tourist buses
+- Push-back seating
+- Student trip support
+- Devotional trip support
+- Marriage trip transportation
+- Tourist/group travel
+- Outstation travel
+- All-India travel
+- Direct WhatsApp enquiry
+
+Do not make unsupported claims.
+
+
+==================================================
+23. MOBILE-FIRST DESIGN
+==================================================
+
+The site must be highly responsive.
+
+Target:
+- Android phones
+- iPhones
+- Tablets
+- Laptops
+- Desktop monitors
+
+Mobile priorities:
+1. Easy WhatsApp contact
+2. Easy navigation
+3. Fleet browsing
+4. Gallery
+5. Videos
+6. Enquiry form
+7. Contact/address
+
+The floating WhatsApp button should be easily accessible but must not block important UI elements.
+
+
+==================================================
+24. SEO
+==================================================
+
+Implement good SEO fundamentals.
+
+Suggested title:
+
+Charisma Transport | Tourist Bus Rental & Travel Services
+
+Potential relevant keywords:
+
+- Charisma Transport
+- Tourist bus rental Kanyakumari
+- Tourist bus rental Nagercoil
+- Bus rental Kanyakumari
+- Bus rental Nagercoil
+- AC tourist bus rental
+- Non-AC tourist bus rental
+- Student trip bus
+- Devotional trip bus
+- Marriage trip bus
+- Outstation bus rental
+- All India tourist bus
+
+Do not keyword stuff.
+
+Implement:
+- Proper title
+- Meta description
+- Semantic HTML
+- Image alt text
+- Open Graph metadata
+- robots.txt
+- sitemap.xml where appropriate
+- Local business structured data if appropriate
+- Fast loading
+- Mobile optimization
+
+Use accurate business information only.
+
+
+==================================================
+25. PERFORMANCE
+==================================================
+
+The application will be hosted on GitHub Pages.
+
+Optimize for:
+- Fast initial loading
+- Mobile data
+- Good Lighthouse performance
+
+Use:
+- Lazy loading
+- WebP images
+- Responsive images where appropriate
+- Code splitting if useful
+- Optimized assets
+- Minimal unnecessary dependencies
+- Video lazy loading/posters
+
+Avoid loading all gallery images/videos immediately.
+
+
+==================================================
+26. ACCESSIBILITY
+==================================================
+
+Follow good accessibility practices.
+
+Use:
+- Semantic HTML
+- Alt text
+- Keyboard-accessible buttons
+- Proper labels
+- Good color contrast
+- Visible focus states
+- ARIA only when necessary
+- Accessible navigation
+- Accessible forms
+
+Do not rely only on color to communicate information.
+
+
+==================================================
+27. RECOMMENDED PROJECT STRUCTURE
+==================================================
+
+Recommended structure:
+
+charisma-transport/
+│
+├── public/
+│   ├── images/
+│   │   ├── buses/
+│   │   ├── destinations/
+│   │   ├── gallery/
+│   │   ├── office/
+│   │   └── owner/
+│   │
+│   └── videos/
+│
+├── src/
+│   ├── components/
+│   │   ├── Navbar/
+│   │   ├── Hero/
+│   │   ├── Services/
+│   │   ├── Fleet/
+│   │   ├── Destinations/
+│   │   ├── Gallery/
+│   │   ├── Videos/
+│   │   ├── Testimonials/
+│   │   ├── Contact/
+│   │   ├── WhatsAppButton/
+│   │   └── Footer/
+│   │
+│   ├── data/
+│   │   ├── buses.ts
+│   │   ├── destinations.ts
+│   │   └── services.ts
+│   │
+│   ├── config/
+│   │   └── contact.ts
+│   │
+│   ├── pages/
+│   │   ├── Home.tsx
+│   │   ├── About.tsx
+│   │   ├── Services.tsx
+│   │   ├── Fleet.tsx
+│   │   ├── Destinations.tsx
+│   │   ├── Gallery.tsx
+│   │   └── Contact.tsx
+│   │
+│   ├── types/
+│   │   └── index.ts
+│   │
+│   ├── App.tsx
+│   ├── main.tsx
+│   └── index.css
+│
+├── .github/
+│   └── workflows/
+│       └── deploy.yml
+│
+├── package.json
+├── tsconfig.json
+├── vite.config.ts
+└── README.md
+
+
+==================================================
+28. DATA-DRIVEN ARCHITECTURE
+==================================================
+
+Use data files rather than hardcoding repeated content inside components.
+
+Example:
+
+src/data/buses.ts
+src/data/destinations.ts
+src/data/services.ts
+
+This should allow future updates without modifying UI components.
+
+For example:
+
+const destinations = [
+  {
+    name: "Ooty",
+    image: "/images/destinations/ooty.webp",
+    description: "..."
+  },
+  {
+    name: "Kodaikanal",
+    image: "/images/destinations/kodaikanal.webp",
+    description: "..."
+  }
+];
+
+Do not invent destination-specific claims.
+
+
+==================================================
+29. SOCIAL LINKS CONFIGURATION
+==================================================
+
+Keep all social links in one place.
+
+Example:
+
+export const socialLinks = {
+  instagram:
+    "https://www.instagram.com/charisma_transport_official?utm_source=qr&igsi=aGNpc2MwcnppZ3Z5",
+
+  facebook:
+    "https://www.facebook.com/p/Charisma-CABS-100063614634252/",
+
+  youtube: null
+};
+
+If a URL changes later, it should only need to be changed in the configuration.
+
+
+==================================================
+30. FUTURE FEATURES
+==================================================
+
+The current website should NOT implement these unless specifically requested later:
+
+- GPS tracking
+- Online booking
+- Online payment
+- Customer accounts
+- Admin dashboard
+- Database
+- Driver management
+- Fleet management system
+- Booking management
+- Invoice system
+- Automated SMS
+- Automated email infrastructure
+- Customer database
+
+However, the architecture should make these possible later.
+
+Potential future architecture:
+
+React frontend
+       ↓
+API/backend
+       ↓
+Database
+       ↓
+Admin dashboard
+
+Future GPS:
+
+Bus
+ ↓
+GPS device
+ ↓
+GPS service/API
+ ↓
+Backend
+ ↓
+React tracking interface
+
+For now, do not build this.
+
+
+==================================================
+31. HOSTING
+==================================================
+
+Hosting:
+
+GitHub Pages
+
+Domain:
+
+charismatransport.com
+
+Deployment flow:
+
+Local development
+      ↓
+Git
+      ↓
+GitHub repository
+      ↓
+GitHub Actions
+      ↓
+Vite production build
+      ↓
+GitHub Pages
+      ↓
+charismatransport.com
+
+Configure the Vite/GitHub Pages deployment correctly.
+
+The application must work correctly with the custom domain.
+
+Include a suitable GitHub Actions workflow for deployment.
+
+
+==================================================
+32. NO DATABASE FOR V1
+==================================================
+
+Important architecture decision:
+
+V1 does NOT require:
+- PostgreSQL
+- MySQL
+- MongoDB
+- Firebase database
+- Supabase database
+- Custom backend
+- VPS
+
+Use static data and free external services where appropriate.
+
+Images:
+Stored in public/images
+
+Videos:
+Stored in public/videos initially
+
+Bus data:
+TypeScript data files
+
+Destination data:
+TypeScript data files
+
+Services:
+TypeScript data files
+
+Contact/social links:
+Central configuration file
+
+Enquiry:
+WhatsApp / free form service / Google Forms as appropriate
+
+
+==================================================
+33. DOMAIN
+==================================================
+
+Desired domain:
+
+charismatransport.com
+
+The domain will be purchased separately.
+
+GitHub Pages will host the website.
+
+The project should be prepared for custom domain configuration.
+
+
+==================================================
+34. CONTENT ACCURACY RULES
+==================================================
+
+This is VERY IMPORTANT.
+
+Never invent:
+- Bus specifications
+- Seating capacities
+- Company statistics
+- Years of experience
+- Awards
+- Customer reviews
+- GPS tracking
+- Wi-Fi
+- Dolby Atmos
+- USB charging
+- CCTV
+- Driver credentials
+- Company history
+- Additional social links
+- YouTube URL
+- Any other unsupported information
+
+Only use confirmed information.
+
+If information is missing, design the component so it can be filled in later.
+
+
+==================================================
+35. CURRENT CONFIRMED DATA — QUICK REFERENCE
+==================================================
+
+Company:
+Charisma Transport
+
+Owner:
+Sam Ebison
+
+Business:
+Travel Company / Tourist Bus Rental
+
+Location:
+Kanyakumari District, Tamil Nadu, India
+
+Service Area:
+Throughout India
+
+Services:
+- Student package trips
+- Devotional trips
+- Marriage trips
+- Tourist trips
+- Group trips
+- Outstation trips
+- All-India travel
+
+Real Bus Seating Capacities:
+- 16
+- 21
+- 34
+- 37
+- 38
+- 46
+- 51
+
+Bus Type:
+Push-back seater tourist buses
+
+AC:
+AC / Non-AC
+
+GPS:
+Not currently available.
+Future feature only.
+
+Frequent destinations:
+- Ooty
+- Kodaikanal
+- Chennai
+- Pondicherry
+- Mysore
+
+Owner address:
+24-21 Beula Cottage
+Kanjankadu
+Manalikarai Post
+Nagercoil
+Tamil Nadu - 629164
+India
+
+Email:
+samelfin.256@gmail.com
+
+WhatsApp:
+84898 92221
+
+Additional phone:
+9843029466
+
+Instagram:
+https://www.instagram.com/charisma_transport_official?utm_source=qr&igsi=aGNpc2MwcnppZ3Z5
+
+Facebook:
+https://www.facebook.com/p/Charisma-CABS-100063614634252/
+
+YouTube:
+Icon only.
+No redirect currently.
+
+Google Maps:
+https://maps.app.goo.gl/NSrZJntWZTVYgGig6
+
+Domain:
+charismatransport.com
+
+Hosting:
+GitHub Pages
+
+Database:
+None for V1
+
+
+==================================================
+36. DEVELOPMENT PRINCIPLES
+==================================================
+
+When implementing the application:
+
+1. Keep components reusable.
+2. Keep business data separate from UI.
+3. Keep contact/social links centralized.
+4. Keep fleet information data-driven.
+5. Keep destination information data-driven.
+6. Do not hardcode repeated content unnecessarily.
+7. Use TypeScript types/interfaces.
+8. Keep components small and maintainable.
+9. Build mobile-first.
+10. Optimize images and videos.
+11. Use semantic HTML.
+12. Make forms accessible.
+13. Keep animations subtle and professional.
+14. Avoid unnecessary dependencies.
+15. Do not introduce a database unless specifically requested.
+16. Do not invent business information.
+17. Make future features easy to add.
+18. Keep the application easy for another developer to maintain.
+19. Use clean naming conventions.
+20. Keep secrets/API keys out of the repository.
+21. Do not store sensitive credentials in frontend code.
+22. Ensure all external links open safely where appropriate.
+23. Make the website production-ready before deployment.
+24. Test responsive behavior at mobile, tablet and desktop sizes.
+25. Ensure GitHub Pages deployment works correctly.
+
+
+==================================================
+37. FINAL DESIGN TARGET
+==================================================
+
+The final website should give visitors the feeling:
+
+"Charisma Transport is a professional, trustworthy and comfortable travel company that I can contact easily for my group trip."
+
+The visual hierarchy should prioritize:
+
+1. Charisma Transport branding
+2. Beautiful real bus imagery
+3. Clear travel services
+4. Fleet/seating options
+5. Destinations
+6. Easy WhatsApp enquiry
+7. Office/location information
+8. Social media
+9. Gallery and videos
+10. Trust and professionalism
+
+The website should be visually impressive but not unnecessarily complicated.
+
+Build V1 as a polished, fast, static React/TypeScript website that can later evolve into a full travel booking platform.

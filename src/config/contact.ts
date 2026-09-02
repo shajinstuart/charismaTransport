@@ -20,6 +20,7 @@ export const contactInfo = {
   location: "Kanyakumari District, Tamil Nadu, India",
   serviceArea: "Throughout India",
   mapsUrl: "https://maps.app.goo.gl/NSrZJntWZTVYgGig6",
+  websiteUrl: "https://shajinstuart.github.io/charismaTransport/",
   domain: "https://charismatransport.com",
   tagline: "Your Journey. Our Charisma.",
 };

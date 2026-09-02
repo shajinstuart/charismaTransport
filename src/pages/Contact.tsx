@@ -4,6 +4,7 @@ import { PageHero } from "../components/PageHero";
 import { EnquiryForm } from "../components/EnquiryForm";
 import { SocialIcons } from "../components/SocialIcons";
 import { contactInfo } from "../config/contact";
+import { asset } from "../lib/asset";
 import { getDefaultEnquiryMessage, getWhatsAppChatUrl } from "../lib/whatsapp";
 
 export function Contact() {
@@ -71,6 +72,24 @@ export function Contact() {
               <div className="mt-3">
                 <SocialIcons />
               </div>
+            </div>
+            <div className="mt-10 max-w-xs rounded-2xl border border-linen bg-white p-5 shadow-card">
+              <p className="text-sm font-semibold uppercase tracking-[0.16em] text-gold-600">
+                Scan to visit
+              </p>
+              <img
+                src={asset("/qr/website.png")}
+                alt="QR code for the Charisma Transport website"
+                className="mt-3 w-full rounded-xl"
+              />
+              <p className="mt-3 break-all text-xs text-navy/60">{contactInfo.websiteUrl}</p>
+              <a
+                href={asset("/qr/website.png")}
+                download="charisma-transport-qr.png"
+                className="btn-navy mt-4 w-full"
+              >
+                Download QR code
+              </a>
             </div>
           </div>
           <div id="enquiry" className="scroll-mt-24">

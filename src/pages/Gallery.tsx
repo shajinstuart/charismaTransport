@@ -27,10 +27,24 @@ export function Gallery() {
         title="Buses, trips and destinations"
         description="Bus, trip and destination images, plus travel videos."
       />
+      <section className="bg-white py-16 sm:py-20">
+        <div className="container-page">
+          <SectionHeading
+            eyebrow="Videos"
+            title="Experience Charisma"
+            description="Watch Charisma Transport on the road."
+          />
+          <div className="mx-auto mt-10 max-w-4xl">
+            {videos.map((video) => (
+              <VideoCard key={video.src} video={video} />
+            ))}
+          </div>
+        </div>
+      </section>
       <section className="py-16 sm:py-20">
         <div className="container-page">
           {categories.length > 2 ? (
-          <div className="flex flex-wrap gap-2">
+          <div className="mb-8 flex flex-wrap gap-2">
             {categories.map((category) => (
               <button
                 key={category}
@@ -48,6 +62,7 @@ export function Gallery() {
             ))}
           </div>
           ) : null}
+          <h2 className="font-display text-3xl text-navy">Photos</h2>
           <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {visible.map((item) => (
               <figure key={`${item.category}-${item.src}`} className="overflow-hidden rounded-2xl bg-white shadow-card">
@@ -61,20 +76,6 @@ export function Gallery() {
                   {item.alt}
                 </figcaption>
               </figure>
-            ))}
-          </div>
-        </div>
-      </section>
-      <section className="bg-white py-16 sm:py-20">
-        <div className="container-page">
-          <SectionHeading
-            eyebrow="Videos"
-            title="Experience Charisma"
-            description="Short travel and bus videos."
-          />
-          <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {videos.map((video) => (
-              <VideoCard key={video.src} video={video} />
             ))}
           </div>
         </div>

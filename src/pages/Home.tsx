@@ -10,10 +10,11 @@ import { contactInfo } from "../config/contact";
 import { services } from "../data/services";
 import { buses } from "../data/buses";
 import { destinations } from "../data/destinations";
-import { galleryItems } from "../data/gallery";
+import { galleryItems, videos } from "../data/gallery";
 import { photos } from "../data/media";
 import { whyChoose } from "../data/whyChoose";
 import { getWhatsAppChatUrl } from "../lib/whatsapp";
+import { VideoCard } from "../components/VideoCard";
 
 export function Home() {
   return (
@@ -21,6 +22,7 @@ export function Home() {
       <Seo path="/" />
       <Hero />
       <Intro />
+      <VideoPreview />
       <ServicesPreview />
       <FleetPreview />
       <DestinationsPreview />
@@ -91,6 +93,30 @@ function Intro() {
               <p className="font-display text-3xl text-navy">{item.value}</p>
               <p className="mt-1 text-sm text-navy/65">{item.label}</p>
             </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function VideoPreview() {
+  return (
+    <section className="bg-white py-16 sm:py-20">
+      <div className="container-page">
+        <div className="mb-10 flex flex-wrap items-end justify-between gap-4">
+          <SectionHeading
+            eyebrow="Videos"
+            title="Experience Charisma"
+            description="Watch Charisma Transport on the road."
+          />
+          <Link to="/gallery" className="text-sm font-semibold text-teal hover:text-teal-dark">
+            Open gallery
+          </Link>
+        </div>
+        <div className="mx-auto max-w-4xl">
+          {videos.map((video) => (
+            <VideoCard key={video.src} video={video} />
           ))}
         </div>
       </div>

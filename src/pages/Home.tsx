@@ -11,8 +11,9 @@ import { services } from "../data/services";
 import { buses } from "../data/buses";
 import { destinations } from "../data/destinations";
 import { galleryItems } from "../data/gallery";
+import { photos } from "../data/media";
 import { whyChoose } from "../data/whyChoose";
-import { getDefaultEnquiryMessage, getWhatsAppChatUrl } from "../lib/whatsapp";
+import { getWhatsAppChatUrl } from "../lib/whatsapp";
 
 export function Home() {
   return (
@@ -35,11 +36,11 @@ function Hero() {
     <section className="relative flex min-h-[92vh] items-center overflow-hidden bg-cream pt-16">
       <div className="pointer-events-none absolute inset-0">
         <ImageWithFallback
-          src="/images/buses/charisma-51-seater.webp"
+          src={photos[0]}
           alt=""
           fallbackLabel=""
           priority
-          className="h-full w-full object-cover opacity-20"
+          className="h-full w-full object-cover opacity-45"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-cream via-cream/92 to-cream/70" />
       </div>
@@ -57,7 +58,7 @@ function Hero() {
             Plan Your Trip
           </Link>
           <a
-            href={getWhatsAppChatUrl(getDefaultEnquiryMessage())}
+            href={getWhatsAppChatUrl()}
             target="_blank"
             rel="noopener noreferrer"
             className="btn-secondary"
@@ -239,7 +240,7 @@ function ContactCta() {
             Plan Your Trip
           </Link>
           <a
-            href={getWhatsAppChatUrl(getDefaultEnquiryMessage())}
+            href={getWhatsAppChatUrl()}
             target="_blank"
             rel="noopener noreferrer"
             className="btn-secondary"

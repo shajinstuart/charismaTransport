@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { Logo } from "./Logo";
-import { getDefaultEnquiryMessage, getWhatsAppChatUrl } from "../lib/whatsapp";
+import { getWhatsAppChatUrl } from "../lib/whatsapp";
 
 const links = [
   { to: "/", label: "Home" },
@@ -63,7 +63,7 @@ export function Navbar() {
           ))}
         </nav>
         <a
-          href={getWhatsAppChatUrl(getDefaultEnquiryMessage())}
+          href={getWhatsAppChatUrl()}
           target="_blank"
           rel="noopener noreferrer"
           className="btn-primary hidden lg:inline-flex"
@@ -98,7 +98,7 @@ export function Navbar() {
               </NavLink>
             ))}
             <a
-              href={getWhatsAppChatUrl(getDefaultEnquiryMessage())}
+              href={getWhatsAppChatUrl()}
               target="_blank"
               rel="noopener noreferrer"
               className="btn-primary mt-3"

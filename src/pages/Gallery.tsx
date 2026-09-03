@@ -25,10 +25,11 @@ export function Gallery() {
       <PageHero
         eyebrow="Gallery"
         title="Buses, trips and destinations"
-        description="Bus, trip and destination images. Videos load only when you press play."
+        description="Bus, trip and destination images, plus travel videos."
       />
       <section className="py-16 sm:py-20">
         <div className="container-page">
+          {categories.length > 2 ? (
           <div className="flex flex-wrap gap-2">
             {categories.map((category) => (
               <button
@@ -46,6 +47,7 @@ export function Gallery() {
               </button>
             ))}
           </div>
+          ) : null}
           <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {visible.map((item) => (
               <figure key={`${item.category}-${item.src}`} className="overflow-hidden rounded-2xl bg-white shadow-card">
@@ -68,7 +70,7 @@ export function Gallery() {
           <SectionHeading
             eyebrow="Videos"
             title="Experience Charisma"
-            description="Short travel and bus videos. Videos load only when you press play."
+            description="Short travel and bus videos."
           />
           <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {videos.map((video) => (

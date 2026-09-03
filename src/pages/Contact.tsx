@@ -5,7 +5,7 @@ import { EnquiryForm } from "../components/EnquiryForm";
 import { SocialIcons } from "../components/SocialIcons";
 import { contactInfo } from "../config/contact";
 import { asset } from "../lib/asset";
-import { getDefaultEnquiryMessage, getWhatsAppChatUrl } from "../lib/whatsapp";
+import { getWhatsAppChatUrl } from "../lib/whatsapp";
 
 export function Contact() {
   return (
@@ -44,7 +44,7 @@ export function Contact() {
               <li className="flex items-center gap-3">
                 <Phone className="h-5 w-5 text-gold" aria-hidden="true" />
                 <a
-                  href={getWhatsAppChatUrl(getDefaultEnquiryMessage())}
+                  href={getWhatsAppChatUrl()}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-teal"

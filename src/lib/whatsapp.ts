@@ -3,7 +3,7 @@ import type { EnquiryFormData } from "../types";
 
 export function getWhatsAppChatUrl(message?: string): string {
   const base = `https://wa.me/${contactInfo.whatsappDigits}`;
-  if (!message) return base;
+  if (!message?.trim()) return base;
   return `${base}?text=${encodeURIComponent(message)}`;
 }
 
@@ -28,22 +28,4 @@ export function buildEnquiryMessage(data: EnquiryFormData): string {
   ]
     .filter((line, index, arr) => !(line === "" && arr[index - 1] === ""))
     .join("\n");
-}
-
-export function getDefaultEnquiryMessage(): string {
-  return [
-    "Hello Charisma Transport,",
-    "",
-    "I would like to enquire about a trip.",
-    "",
-    "Name:",
-    "From:",
-    "Destination:",
-    "Travel Date:",
-    "Return Date:",
-    "Passengers:",
-    "Trip Type:",
-    "",
-    "Please share availability and pricing.",
-  ].join("\n");
 }

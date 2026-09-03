@@ -1,33 +1,34 @@
 import type { Destination } from "../types";
+import { photoAt } from "./media";
 
 export const destinations: Destination[] = [
   {
     name: "Ooty",
-    image: "/images/destinations/ooty.webp",
+    image: photoAt(0),
     description:
       "A frequently travelled destination for student, family and group trips.",
   },
   {
     name: "Kodaikanal",
-    image: "/images/destinations/kodaikanal.webp",
+    image: photoAt(1),
     description:
       "A frequently travelled destination for student, family and group trips.",
   },
   {
     name: "Chennai",
-    image: "/images/destinations/chennai.webp",
+    image: photoAt(0),
     description:
       "A frequently travelled destination for student, family and group trips.",
   },
   {
     name: "Pondicherry",
-    image: "/images/destinations/pondicherry.webp",
+    image: photoAt(1),
     description:
       "A frequently travelled destination for student, family and group trips.",
   },
   {
     name: "Mysore",
-    image: "/images/destinations/mysore.webp",
+    image: photoAt(0),
     description:
       "A frequently travelled destination for student, family and group trips.",
   },

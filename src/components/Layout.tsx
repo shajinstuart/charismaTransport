@@ -3,7 +3,7 @@ import { Outlet, useLocation } from "react-router-dom";
 import { Footer } from "./Footer";
 import { JsonLd } from "./JsonLd";
 import { Navbar } from "./Navbar";
-import { WhatsAppButton } from "./WhatsAppButton";
+import { FloatingButtons } from "./FloatingButtons";
 
 export function Layout() {
   const location = useLocation();
@@ -32,7 +32,7 @@ export function Layout() {
       <Navbar />
       <Outlet />
       <Footer />
-      <WhatsAppButton />
+      <FloatingButtons />
     </div>
   );
 }

@@ -1,18 +1,12 @@
 import type { GalleryItem, VideoItem } from "../types";
+import { buses } from "./buses";
 import { defaultVideo, photos } from "./media";
 
-export const galleryItems: GalleryItem[] = [
-  {
-    src: photos[0],
-    alt: "Charisma Transport tourist bus",
-    category: "Gallery",
-  },
-  {
-    src: photos[1],
-    alt: "Charisma Transport tourist bus",
-    category: "Gallery",
-  },
-];
+export const galleryItems: GalleryItem[] = buses.map((bus) => ({
+  src: bus.image,
+  alt: `${bus.seatingCapacity} seater Charisma Transport tourist bus`,
+  category: "Fleet",
+}));
 
 export const videos: VideoItem[] = [
   {

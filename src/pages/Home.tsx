@@ -8,13 +8,13 @@ import { DestinationCard } from "../components/DestinationCard";
 import { ImageWithFallback } from "../components/ImageWithFallback";
 import { contactInfo } from "../config/contact";
 import { services } from "../data/services";
-import { buses } from "../data/buses";
+import { buses, seatingCapacitiesText } from "../data/buses";
 import { destinations } from "../data/destinations";
 import { galleryItems, videos } from "../data/gallery";
-import { photos } from "../data/media";
 import { whyChoose } from "../data/whyChoose";
 import { getWhatsAppChatUrl } from "../lib/whatsapp";
 import { VideoCard } from "../components/VideoCard";
+import { HeroSlider } from "../components/HeroSlider";
 
 export function Home() {
   return (
@@ -35,39 +35,35 @@ export function Home() {
 
 function Hero() {
   return (
-    <section className="relative flex min-h-[92vh] items-center overflow-hidden bg-cream pt-16">
-      <div className="pointer-events-none absolute inset-0">
-        <ImageWithFallback
-          src={photos[0]}
-          alt=""
-          fallbackLabel=""
-          priority
-          className="h-full w-full object-cover opacity-45"
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-cream via-cream/92 to-cream/70" />
-      </div>
-      <div className="container-page relative z-10 py-20">
-        <p className="eyebrow">Tourist bus rental · Kanyakumari District</p>
-        <h1 className="mt-4 max-w-3xl font-display text-5xl leading-tight text-navy sm:text-6xl lg:text-7xl">
-          {contactInfo.companyName}
-        </h1>
-        <p className="mt-4 font-display text-2xl text-gold-600 sm:text-3xl">{contactInfo.tagline}</p>
-        <p className="mt-5 max-w-xl text-base text-navy/70 sm:text-lg">
-          Student Trips • Devotional Trips • Marriage Trips • Tourist & Group Travel
-        </p>
-        <div className="mt-8 flex flex-wrap gap-3">
-          <Link to="/contact#enquiry" className="btn-primary">
-            Plan Your Trip
-          </Link>
-          <a
-            href={getWhatsAppChatUrl()}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-secondary"
-          >
-            WhatsApp Us
-          </a>
+    <section className="bg-cream pb-16 pt-24 sm:pt-28 lg:pb-20">
+      <div className="container-page grid items-center gap-10 lg:grid-cols-[1.1fr_1fr] lg:gap-14">
+        <div>
+          <p className="eyebrow">Tourist bus rental · Kanyakumari District</p>
+          <h1 className="mt-4 max-w-3xl font-display text-5xl leading-tight text-navy sm:text-6xl lg:text-7xl">
+            {contactInfo.companyName}
+          </h1>
+          <p className="mt-4 font-display text-2xl text-gold-600 sm:text-3xl">{contactInfo.tagline}</p>
+          <p className="mt-5 max-w-xl text-base text-navy/70 sm:text-lg">
+            Student Trips • Devotional Trips • Marriage Trips • Tourist & Group Travel
+          </p>
+          <p className="mt-3 max-w-xl text-sm text-navy/60">
+            {seatingCapacitiesText} seater pushback tourist buses · AC and Non-AC
+          </p>
+          <div className="mt-8 flex flex-wrap gap-3">
+            <Link to="/contact#enquiry" className="btn-primary">
+              Plan Your Trip
+            </Link>
+            <a
+              href={getWhatsAppChatUrl()}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-secondary"
+            >
+              WhatsApp Us
+            </a>
+          </div>
         </div>
+        <HeroSlider />
       </div>
     </section>
   );
@@ -80,11 +76,11 @@ function Intro() {
         <SectionHeading
           eyebrow="About"
           title="Comfortable group travel from Kanyakumari District"
-          description={`Charisma Transport is a travel company providing student package trips, devotional trips and marriage trips with 16, 21, 34, 37, 38, 46 and 51 push-back seater AC/Non-AC tourist buses for rent. Owned by ${contactInfo.owner}. Travel throughout India.`}
+          description={`Charisma Transport is a travel company providing student package trips, devotional trips and marriage trips with ${seatingCapacitiesText} pushback seater AC/Non-AC tourist buses for rent. Owned by ${contactInfo.owner}. Travel throughout India.`}
         />
         <div className="grid grid-cols-2 gap-4">
           {[
-            { label: "Seating options", value: "7" },
+            { label: "Seating options", value: String(buses.length) },
             { label: "Bus type", value: "Tourist" },
             { label: "Service area", value: "India" },
             { label: "Contact", value: "WhatsApp" },
@@ -155,8 +151,8 @@ function FleetPreview() {
         <div className="mb-10 flex flex-wrap items-end justify-between gap-4">
           <SectionHeading
             eyebrow="Our Fleet"
-            title="Push-back seater tourist buses"
-            description="AC and Non-AC options across confirmed seating capacities."
+            title="Pushback seater tourist buses"
+            description="Luxury 2+2 and 3+2 seating, Dolby Digital sound and DJ lights. AC and Non-AC options."
           />
           <Link to="/fleet" className="text-sm font-semibold text-teal hover:text-teal-dark">
             View full fleet
@@ -217,7 +213,7 @@ function GalleryPreview() {
               src={item.src}
               alt={item.alt}
               fallbackLabel={item.category}
-              className="h-40 w-full rounded-2xl object-cover sm:h-52"
+              className="aspect-[4/5] w-full rounded-2xl object-cover"
             />
           ))}
         </div>

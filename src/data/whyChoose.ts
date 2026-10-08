@@ -1,7 +1,11 @@
+import { seatingCapacitiesText } from "./buses";
+
 export const whyChoose = [
-  "Multiple seating options: 16, 21, 34, 37, 38, 46 and 51 seater",
+  `Multiple seating options: ${seatingCapacitiesText} seater`,
   "AC and Non-AC tourist buses",
-  "Push-back seating",
+  "Pushback luxury seats in 2+2 and 3+2 layouts",
+  "Dolby Digital speaker system",
+  "DJ and laser show lights",
   "Student trip support",
   "Devotional trip support",
   "Marriage trip transportation",

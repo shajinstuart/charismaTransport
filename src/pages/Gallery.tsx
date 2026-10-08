@@ -70,7 +70,7 @@ export function Gallery() {
                   src={item.src}
                   alt={item.alt}
                   fallbackLabel={item.category}
-                  className="h-56 w-full object-cover"
+                  className="aspect-[4/5] w-full object-cover"
                 />
                 <figcaption className="px-4 py-3 text-sm text-navy/70">
                   {item.alt}

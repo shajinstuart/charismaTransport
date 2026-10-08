@@ -2,6 +2,7 @@ import { Seo } from "../components/Seo";
 import { PageHero } from "../components/PageHero";
 import { contactInfo } from "../config/contact";
 import { services } from "../data/services";
+import { seatingCapacitiesText } from "../data/buses";
 
 export function About() {
   return (
@@ -22,7 +23,7 @@ export function About() {
             <h2 className="font-display text-3xl text-navy">Company</h2>
             <p className="mt-4 leading-relaxed text-navy/75">
               Charisma Transport provides student package trips, devotional trips and marriage
-              trips with 16, 21, 34, 37, 38, 46 and 51 push-back seater AC/Non-AC tourist buses
+              trips with {seatingCapacitiesText} pushback seater AC/Non-AC tourist buses
               for rent. The company is based in {contactInfo.location} and provides travel
               throughout India.
             </p>

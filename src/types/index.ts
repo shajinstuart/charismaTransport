@@ -7,7 +7,8 @@ export type TripType =
 
 export interface Bus {
   seatingCapacity: number;
-  type: string;
+  seatLayout: "2+2" | "3+2";
+  type: "AC / Non-AC" | "Non-AC";
   features: string[];
   image: string;
 }

@@ -24,7 +24,7 @@ npm run preview
 
 Place files in these folders (WebP preferred):
 
-- `public/images/buses/` — example: `charisma-16-seater.webp`
+- `public/images/buses/` — example: `charisma-34-seater.jpg`
 - `public/images/destinations/` — example: `ooty.webp`
 - `public/images/gallery/`
 - `public/images/office/`

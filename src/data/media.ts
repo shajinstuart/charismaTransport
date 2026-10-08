@@ -1,9 +1,6 @@
-/** Shared photos and video until individual files are added. */
+import { buses } from "./buses";
 
-export const photos = [
-  "/images/gallery/charisma1.jpeg",
-  "/images/gallery/charisma2.jpeg",
-] as const;
+export const photos = buses.map((bus) => bus.image);
 
 export const defaultVideo = "/videos/charisma.mp4";
 

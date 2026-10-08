@@ -1,7 +1,7 @@
 import { Seo } from "../components/Seo";
 import { PageHero } from "../components/PageHero";
 import { BusCard } from "../components/BusCard";
-import { buses } from "../data/buses";
+import { buses, seatingCapacitiesText } from "../data/buses";
 
 export function Fleet() {
   return (
@@ -9,12 +9,12 @@ export function Fleet() {
       <Seo
         title="Our Fleet"
         path="/fleet"
-        description="Charisma Transport fleet: 16, 21, 34, 37, 38, 46 and 51 seater push-back AC/Non-AC tourist buses for rent."
+        description={`Charisma Transport fleet: ${seatingCapacitiesText} seater pushback AC/Non-AC tourist buses with luxury seats, Dolby Digital sound and DJ lights.`}
       />
       <PageHero
         eyebrow="Our Fleet"
         title="Tourist buses for rent"
-        description="Push-back seater tourist buses with AC and Non-AC options. Confirmed seating capacities only."
+        description={`${seatingCapacitiesText} seater pushback tourist buses with 2+2 and 3+2 luxury seating, Dolby Digital sound and DJ lights.`}
       />
       <section className="py-16 sm:py-20">
         <div className="container-page grid gap-6 sm:grid-cols-2 lg:grid-cols-3">

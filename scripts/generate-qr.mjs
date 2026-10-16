@@ -3,7 +3,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import QRCode from "qrcode";
 
-const url = "https://shajinstuart.github.io/charismaTransport/";
+const url = "https://charismatransport.in/";
 const outDir = path.join(path.dirname(fileURLToPath(import.meta.url)), "..", "public", "qr");
 
 mkdirSync(outDir, { recursive: true });

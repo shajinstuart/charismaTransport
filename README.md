@@ -2,9 +2,7 @@
 
 Static marketing website for Charisma Transport — tourist bus rental from Kanyakumari District, Tamil Nadu. Built with React, TypeScript, Vite and Tailwind CSS.
 
-Live site (GitHub Pages): [https://shajinstuart.github.io/charismaTransport/](https://shajinstuart.github.io/charismaTransport/)
-
-Custom domain (later): [charismatransport.com](https://charismatransport.com)
+Live site: [https://charismatransport.in](https://charismatransport.in) (hosted on GitHub Pages)
 
 ## Local development
 
@@ -42,16 +40,23 @@ Update paths in:
 
 ## GitHub Pages
 
-The site deploys from GitHub Actions to:
-
-**https://shajinstuart.github.io/charismaTransport/**
+The site deploys from GitHub Actions to the custom domain **https://charismatransport.in**.
 
 1. Repo **Settings → Pages → Build and deployment → Source: GitHub Actions**.
 2. The workflow in `.github/workflows/deploy.yml` builds the Vite app, copies `index.html` to `404.html` for SPA routes, and publishes.
+3. `public/CNAME` contains `charismatransport.in`, and Vite `base` is `/`.
 
-Vite `base` is `/charismaTransport/` so assets and React Router work on this project URL.
+DNS at the domain registrar:
 
-To use `charismatransport.com` later: add a `public/CNAME` file, point DNS to GitHub Pages, then set `base: "/"` in `vite.config.ts` and remove the React Router basename.
+| Type | Host | Value |
+|---|---|---|
+| A | @ | 185.199.108.153 |
+| A | @ | 185.199.109.153 |
+| A | @ | 185.199.110.153 |
+| A | @ | 185.199.111.153 |
+| CNAME | www | shajinstuart.github.io |
+
+After changing the domain, regenerate the QR code with `npm run qr`.
 
 ## Enquiry form
 

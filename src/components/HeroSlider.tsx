@@ -23,7 +23,7 @@ export function HeroSlider() {
 
   return (
     <div
-      className="relative mx-auto w-full max-w-md overflow-hidden rounded-3xl bg-linen shadow-lift lg:max-w-none"
+      className="relative mx-auto h-full min-h-[220px] w-full max-w-md overflow-hidden rounded-3xl bg-linen shadow-lift lg:h-auto lg:min-h-0 lg:max-w-none"
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
       onFocus={() => setPaused(true)}
@@ -31,24 +31,24 @@ export function HeroSlider() {
       aria-roledescription="carousel"
       aria-label="Charisma Transport fleet"
     >
-      <div className="relative aspect-[4/5]">
+      <div className="relative h-full w-full lg:aspect-[4/5] lg:h-auto">
         {buses.map((bus, i) => (
           <img
             key={bus.image}
             src={asset(bus.image)}
             alt={`${bus.seatingCapacity} seater Charisma Transport tourist bus`}
             loading={i === 0 ? "eager" : "lazy"}
-            className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-700 ${
+            className={`absolute inset-0 h-full w-full object-contain transition-opacity duration-700 lg:object-cover ${
               i === index ? "opacity-100" : "opacity-0"
             }`}
             aria-hidden={i !== index}
           />
         ))}
-        <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-navy/85 via-navy/40 to-transparent p-5 pt-16">
-          <p className="font-display text-3xl text-white" aria-live="polite">
+        <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-navy/85 via-navy/40 to-transparent p-4 pt-12 sm:p-5 sm:pt-16">
+          <p className="font-display text-2xl text-white sm:text-3xl" aria-live="polite">
             {current.seatingCapacity} Seater
           </p>
-          <p className="mt-1 text-sm text-white/85">
+          <p className="mt-1 text-xs text-white/85 sm:text-sm">
             {current.seatLayout} luxury pushback · {current.type}
           </p>
         </div>

@@ -4,8 +4,8 @@ export const contactInfo = {
   companyName: "Charisma Transport",
   owner: "Sam Ebison",
   email: "samelfin.256@gmail.com",
-  whatsapp: "84898 92221",
-  whatsappDigits: "918489892221",
+  whatsapp: "70920 29466",
+  whatsappDigits: "917092029466",
   phone: "9843029466",
   address:
     "24-21 Beula Cottage, Kanjankadu, Manalikarai Post, Nagercoil, Tamil Nadu - 629164, India",

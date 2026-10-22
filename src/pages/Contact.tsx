@@ -82,7 +82,6 @@ export function Contact() {
                 alt="QR code for the Charisma Transport website"
                 className="mt-3 w-full rounded-xl"
               />
-              <p className="mt-3 break-all text-xs text-navy/60">{contactInfo.websiteUrl}</p>
               <a
                 href={asset("/qr/website.png")}
                 download="charisma-transport-qr.png"

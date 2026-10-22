@@ -70,9 +70,22 @@ export const buses: Bus[] = [
     ],
     image: "/images/buses/charisma-54-seater.jpg",
   },
+  {
+    seatingCapacity: 17,
+    seatLayout: "2+1",
+    type: "AC / Non-AC",
+    features: [
+      "17 pushback seater",
+      "2+1 luxury seats",
+      "AC and Non-AC",
+      "Dolby Digital speaker system",
+      "Laser show lights",
+    ],
+    image: "/images/buses/charisma-17-seater.jpg",
+  },
 ];
 
 export const seatingCapacitiesText = (() => {
-  const seats = buses.map((bus) => bus.seatingCapacity);
+  const seats = [...buses.map((bus) => bus.seatingCapacity)].sort((a, b) => a - b);
   return `${seats.slice(0, -1).join(", ")} and ${seats[seats.length - 1]}`;
 })();

@@ -35,21 +35,23 @@ export function Home() {
 
 function Hero() {
   return (
-    <section className="bg-cream pb-16 pt-24 sm:pt-28 lg:pb-20">
-      <div className="container-page grid items-center gap-10 lg:grid-cols-[1.1fr_1fr] lg:gap-14">
-        <div>
-          <p className="eyebrow">Tourist bus rental · Kanyakumari District</p>
-          <h1 className="mt-4 max-w-3xl font-display text-5xl leading-tight text-navy sm:text-6xl lg:text-7xl">
+    <section className="bg-cream lg:pb-20 lg:pt-28">
+      <div className="container-page flex min-h-[100svh] flex-col gap-3 pb-4 pt-[4.25rem] lg:grid lg:min-h-0 lg:grid-cols-[1.1fr_1fr] lg:items-center lg:gap-14 lg:py-0">
+        <div className="shrink-0">
+          <p className="eyebrow">Tourist bus rental · Kanyakumari</p>
+          <h1 className="mt-2 whitespace-nowrap font-display text-[clamp(1.7rem,7.4vw,4.5rem)] leading-none text-navy lg:mt-4">
             {contactInfo.companyName}
           </h1>
-          <p className="mt-4 font-display text-2xl text-gold-600 sm:text-3xl">{contactInfo.tagline}</p>
-          <p className="mt-5 max-w-xl text-base text-navy/70 sm:text-lg">
+          <p className="mt-2 font-display text-xl text-gold-600 sm:mt-4 sm:text-2xl lg:text-3xl">
+            {contactInfo.tagline}
+          </p>
+          <p className="mt-2 max-w-xl text-sm text-navy/70 sm:mt-5 sm:text-base lg:text-lg">
             Student Trips • Devotional Trips • Marriage Trips • Tourist & Group Travel
           </p>
-          <p className="mt-3 max-w-xl text-sm text-navy/60">
+          <p className="mt-2 max-w-xl text-xs text-navy/60 sm:mt-3 sm:text-sm">
             {seatingCapacitiesText} seater pushback tourist buses · AC and Non-AC
           </p>
-          <div className="mt-8 flex flex-wrap gap-3">
+          <div className="mt-4 flex flex-wrap gap-3 sm:mt-8">
             <Link to="/contact#enquiry" className="btn-primary">
               Plan Your Trip
             </Link>
@@ -63,7 +65,9 @@ function Hero() {
             </a>
           </div>
         </div>
-        <HeroSlider />
+        <div className="min-h-0 flex-1 lg:flex-none">
+          <HeroSlider />
+        </div>
       </div>
     </section>
   );
@@ -152,7 +156,7 @@ function FleetPreview() {
           <SectionHeading
             eyebrow="Our Fleet"
             title="Pushback seater tourist buses"
-            description="Luxury 2+2 and 3+2 seating, Dolby Digital sound and DJ lights. AC and Non-AC options."
+            description="Luxury 2+1, 2+2 and 3+2 seating, Dolby Digital sound and DJ lights. AC and Non-AC options."
           />
           <Link to="/fleet" className="text-sm font-semibold text-teal hover:text-teal-dark">
             View full fleet

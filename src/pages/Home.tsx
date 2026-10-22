@@ -36,16 +36,14 @@ export function Home() {
 function Hero() {
   return (
     <section className="bg-cream lg:pb-20 lg:pt-28">
-      <div className="container-page flex min-h-[100svh] flex-col gap-3 pb-4 pt-[4.25rem] lg:grid lg:min-h-0 lg:grid-cols-[1.1fr_1fr] lg:items-center lg:gap-14 lg:py-0">
-        <div className="shrink-0">
-          <p className="eyebrow">Tourist bus rental · Kanyakumari</p>
-          <h1 className="mt-2 whitespace-nowrap font-display text-[clamp(1.7rem,7.4vw,4.5rem)] leading-none text-navy lg:mt-4">
-            {contactInfo.companyName}
-          </h1>
-          <p className="mt-2 font-display text-xl text-gold-600 sm:mt-4 sm:text-2xl lg:text-3xl">
+      <div className="container-page grid gap-5 pb-6 pt-[4.5rem] lg:grid-cols-[1.1fr_1fr] lg:items-center lg:gap-14 lg:py-0">
+        <div>
+          <h1 className="sr-only">{contactInfo.companyName}</h1>
+          <p className="font-display text-2xl leading-tight text-gold-600 sm:text-3xl lg:text-4xl">
             {contactInfo.tagline}
           </p>
-          <p className="mt-2 max-w-xl text-sm text-navy/70 sm:mt-5 sm:text-base lg:text-lg">
+          <p className="eyebrow mt-3">Tourist bus rental · Kanyakumari</p>
+          <p className="mt-3 max-w-xl text-sm text-navy/70 sm:mt-5 sm:text-base lg:text-lg">
             Student Trips • Devotional Trips • Marriage Trips • Tourist & Group Travel
           </p>
           <p className="mt-2 max-w-xl text-xs text-navy/60 sm:mt-3 sm:text-sm">
@@ -65,9 +63,7 @@ function Hero() {
             </a>
           </div>
         </div>
-        <div className="min-h-0 flex-1 lg:flex-none">
-          <HeroSlider />
-        </div>
+        <HeroSlider />
       </div>
     </section>
   );
